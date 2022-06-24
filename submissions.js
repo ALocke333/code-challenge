@@ -1,4 +1,3 @@
-
 function findSum(numbers) {
   let total = 0;
   for (let i = 0; i < numbers.length; i++) {
@@ -6,7 +5,7 @@ function findSum(numbers) {
    }
   return total;
   };
-
+console.log(findSum());
 
  
  
@@ -33,7 +32,7 @@ if (count < leastCount) {
 }
 return result;
 }; 
-
+console.log(findFrequency());
 
 
 function isPalindrome(string) {
@@ -47,7 +46,7 @@ alert ('True');
 };
 const string = prompt('Enter a string');
 const value = isPalindrome(string);
-
+console.log(isPalindrome());
 
 function largestPair (array) {
   var max = -Infinity;
@@ -56,7 +55,7 @@ function largestPair (array) {
      }
      return max;
   };
-
+console.log(largestPair());
 
 function removeParenth (string) {
   var s = String(prompt('Enter String'))
@@ -68,7 +67,7 @@ function removeParenth (string) {
     
   return result
 };
-
+console.log(removeParenth());
 
 function scoreScrabble (string) {
   let sum = 0
@@ -92,4 +91,4 @@ function scoreScrabble (string) {
   }
   return sum 
 };
-
+console.log(scoreScrabble());
