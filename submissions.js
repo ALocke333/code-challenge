@@ -1,15 +1,15 @@
-function findSum(numbers) {
+const findSum = function(array) {
   let total = 0;
   for (let i = 0; i < numbers.length; i++) {
     total += numbers[i];
    }
   return total;
   };
-console.log(findSum());
+
 
  
  
-  function findFrequency(data) {
+ const findFrequency = function(array) {
     let result = {
       most: '' ,
       least: ''
@@ -32,10 +32,10 @@ if (count < leastCount) {
 }
 return result;
 }; 
-console.log(findFrequency());
 
 
-function isPalindrome(string) {
+
+const isPalindrome = function(str) {
  const length = string.length;
  for (let i = 0; i < length / 2; i++) {
    if (string[i] !== string[length - 1 - i]) {
@@ -46,18 +46,18 @@ alert ('True');
 };
 const string = prompt('Enter a string');
 const value = isPalindrome(string);
-console.log(isPalindrome());
 
-function largestPair (array) {
+
+const largestPair = function(array) {
   var max = -Infinity;
   for (let i = 0; i < array.length-1; i++) {
     max = array[i]*array[i+1]>max?array[i]*array[i+1]:max;
      }
      return max;
   };
-console.log(largestPair());
 
-function removeParenth (string) {
+
+const removeParenth = function(str) {
   var s = String(prompt('Enter String'))
   var result = ''
   for (let i = 0; i < s.length; i++) {
@@ -67,9 +67,9 @@ function removeParenth (string) {
     
   return result
 };
-console.log(removeParenth());
 
-function scoreScrabble (string) {
+
+const scoreScrabble = function(str) {
   let sum = 0
   temp = String(prompt('Enter a word : '))
   let s = {
@@ -91,4 +91,4 @@ function scoreScrabble (string) {
   }
   return sum 
 };
-console.log(scoreScrabble());
+
