@@ -34,13 +34,11 @@ return result;
 
 
 const isPalindrome = function(str) {
- const length = str.length;
- for (let i = 0; i < length / 2; i++) {
-   if (str[i] !== str[length - 1 - i]) {
-     alert ('False');
-   }
- }
-alert ('True');
+  var len = Math.floor(str.length / 2);
+  for (var i = 0; i < len; i++)
+    if (str[i] !== str[str.length - i - 1])
+      return false;
+  return true;
 };
 
 
